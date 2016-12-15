@@ -1,7 +1,7 @@
 <?php
 	
 	/**
-	* 
+	* 用户
 	*/
 	class Person 
 	{	
@@ -10,8 +10,8 @@
 		private $pwd;
 		function __construct()
 		{
-			$this->user = $_POST['user'];
-			$this->pwd = $_POST['pwd'];
+			$this->user = @$_POST['username'];
+			$this->pwd = @$_POST['pwd'];
 			include("conn.php");
 			// echo $this->user."  ".$this->pwd;
 		}
@@ -23,11 +23,11 @@
 			// print_r($arr);
 			if(!empty($arr)){
 				echo "登录成功";
-				echo "<script>location.href='putlis.php?user=$this->user'</script>";
+				return true;
 			}else{
 				echo "登录失败";
+				return false;
 			}
-			// echo $arr['user'];
 		}
 		public function userAdd()
 		{

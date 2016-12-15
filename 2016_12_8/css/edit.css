@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:微软雅黑;
+	background-color: #29b54a;
+}
+
+#bodyDiv{
+	background-color: #fff;
+	width: 60%;
+	height: 200px;
+	margin: 100px auto;
+	padding: 7px;
+	border-radius: 5px;
+}
+#pText{
+	margin: 0 0 0 10px;
+}
+#inputText{
+	/*width: 300px;*/
+	width: 70%;
+	height: 25px;
+	margin: 10px;
+	font-size: 1em;
+}
+#inputContent{
+	resize: none;
+	/*width: 540px;*/
+	width: 95%;
+	height: 80px;
+	margin: 0 10px;
+	font-size: 1.25em;
+}
+#inputSubmit{
+	float: right;
+	margin: 5px 30px 0 0;
+	font-size: 20px;
+}
