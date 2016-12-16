@@ -7,6 +7,26 @@ body{
 	background-color: #29b54a;
 	/*background-color: #5B1344;*/
 }
+#divKey{
+
+	width: 30%;
+	margin: auto;
+	margin-top: 70px;
+	font-size: 30px;
+
+}
+#divInputText{
+	width: 300px;
+	height: 40px;
+	margin: auto;
+	font-size: 30px;
+
+}
+#divInputSub{
+	width: 100px;
+	height: 40px;
+	font-size: 28px;
+}
 .aLogin p{
 	margin: 0 0 0 50px;
 	font-size: 18px;
@@ -119,4 +139,19 @@ hr{
 	float: right;
 	font-size: 10px;
 	bottom: 4px;
+}
+#divTran{
+	width: 50%;
+	font-size: 18px;
+	margin: auto;
+	/*border: 1px solid red;*/
+	/*padding: 0 0 0 100px;*/
+}
+#divP{
+	color: #000;
+}
+#divTran a{
+	margin:0 0 0 15px;
+	color: #fff;
+	text-decoration: none;
 }

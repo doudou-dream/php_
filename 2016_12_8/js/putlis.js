@@ -55,5 +55,13 @@ var store = obj.val();
 	}).mouseout(function() {
 		this.style.color='#FFFFFF';
 	});
+
+	//翻页
+	$('#divTran a').mouseover(function () {
+		this.style.color = 'red';
+		// console.log('aaa');
+	}).mouseout(function () {
+		this.style.color = '#fff';
+	});
 	
 });

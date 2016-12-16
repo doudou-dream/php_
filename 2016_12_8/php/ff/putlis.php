@@ -23,7 +23,12 @@
 			}
 		 ?>
 
-
+		<div id="divKey">
+			<form action="" method="get">
+				<input id="divInputText" type="text" name="key">
+			<input id="divInputSub" type="submit" name="submit" value="搜索">
+			</form>
+		</div>
 		<div id="lump">
 			<p id="pText">你想告诉大家什么新鲜事？</p>
 			
