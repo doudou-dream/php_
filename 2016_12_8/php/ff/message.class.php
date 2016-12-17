@@ -74,7 +74,7 @@
 				$user=$arr['user'];// echo "$user";
 				$userhits=$arr['userhits'];#取值
 				echo "<div class='divUser'>";
-				echo "<p class='pUserTitle'><a href='messageHome.php?userhits=$userhits&user=$user&id=$id'>".$arr['usertitle']."主页</a></p>";
+				echo "<p class='pUserTitle'><a href='messageHome.php?userhits=$userhits&user=$user&id=$id'>".$arr['usertitle']."</a></p>";
 				echo "<img src='../../image/arrow_32.png' class='imgShow'>";
 				
 				echo "<div class='divDisplay'>

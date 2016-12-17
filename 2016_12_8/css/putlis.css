@@ -7,6 +7,10 @@ body{
 	background-color: #29b54a;
 	/*background-color: #5B1344;*/
 }
+.aLogout{
+	text-decoration: none;
+	font-size: 18px;
+}
 #divKey{
 
 	width: 30%;

@@ -17,9 +17,9 @@
 			}
 			if(isset($_SESSION['islog'])){
 				echo $_SESSION['username'].",你好，欢迎来到个人中心！";
-				echo "<a href='logout.php'>注销</a>";
+				echo "<a class='aLogout' href='logout.php'>注销</a>";
 			}else{
-				echo "您还未登录，请<a href='../pc/login.html'>登录</a>";
+				echo "您还未登录，请<a class='aLogout' href='../pc/login.html'>登录</a>";
 			}
 		 ?>
 
