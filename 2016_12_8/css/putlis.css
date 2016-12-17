@@ -16,15 +16,15 @@ body{
 
 }
 #divInputText{
-	width: 300px;
-	height: 40px;
+	width: 50%;
+	height: 35px;
 	margin: auto;
 	font-size: 30px;
 
 }
 #divInputSub{
-	width: 100px;
-	height: 40px;
+	width: 20%;
+	height: 35px;
 	font-size: 28px;
 }
 .aLogin p{

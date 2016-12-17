@@ -70,12 +70,13 @@
 			// $arr=mysql_fetch_assoc($row);
 			// print_r($arr);
 			while(@$arr=mysql_fetch_assoc($row)){
-				echo "<div class='divUser'>";
-				echo "<p class='pUserTitle'><a href='#'>".$arr['usertitle']."</a></p>";
-				echo "<img src='../../image/arrow_32.png' class='imgShow'>";
 				$id=$arr['userid'];	
-				$user=$arr['user'];
-				// echo "$user";
+				$user=$arr['user'];// echo "$user";
+				$userhits=$arr['userhits'];#取值
+				echo "<div class='divUser'>";
+				echo "<p class='pUserTitle'><a href='messageHome.php?userhits=$userhits&user=$user&id=$id'>".$arr['usertitle']."主页</a></p>";
+				echo "<img src='../../image/arrow_32.png' class='imgShow'>";
+				
 				echo "<div class='divDisplay'>
 						<p><a id='aDisplay' href='messageAdopt.php?userid=$id&user=$user'>编辑</a></p>
 						<p><a href='delete.php?userid=$id&user=$user'>删除</a></p>
