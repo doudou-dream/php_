@@ -1,0 +1,42 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 微软雅黑;
+	background-color: #29b54a;
+}
+p{
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 0;
+}
+#divDD{
+	width: 30%;
+	height: 240px;
+	margin: auto;
+	margin-top: 10%;
+	background-color: #fff;
+	padding: 10px;
+}
+.inputText{
+	width: 100%;
+	height: 30px;
+	font-size: 18px;
+}
+.inputPassword{
+	width: 100%;
+	height: 30px;
+	font-size: 18px;
+}
+.inputSubmit{
+	width: 102%;
+	height: 30px;
+	margin-top: 20px;
+	font-size: 24px;
+}
+.in_text{
+	width: 70%;
+	margin:  auto;
+
+}

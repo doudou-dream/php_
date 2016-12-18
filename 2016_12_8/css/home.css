@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 微软雅黑;
+	background-color: #29b54a;
+	font-size: 24px;
+}
+#divDD{
+	width: 50%;
+	/*height: 100px;*/
+	margin: auto;
+	margin-top: 100px;
+	padding: 30px;
+	background-color: #fff;
+}
+#pContent{
+	/*border: 1px solid red;*/
+	padding: 3px 10px 3px 10px;
+	font-size: 18px;
+	margin-bottom: 16px;
+	text-indent: 2em;
+}
+#pTime{
+	float: left;
+	font-size: 14px;
+}
+.aPutlis{
+	text-decoration: none;
+	color: #663366;
+}
+#divSpan{
+	font-size: 7px;
+	float: right;
+}

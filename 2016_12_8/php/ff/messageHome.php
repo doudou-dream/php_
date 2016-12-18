@@ -1,0 +1,21 @@
+<?php
+	include('conn.php');
+	session_start();
+	$userhits=$_GET['userhits'];
+	$user=$_GET['user'];
+	$id=$_GET['id'];
+	setcookie('user',$user);
+	setcookie('userhits',$userhits);
+	$sql = "select * from message where userid='$id'";
+	// echo "$sql";
+	$row=mysql_query($sql);
+	// echo $row;
+	$arr=mysql_fetch_assoc($row);
+	// print_r($arr);
+	setcookie('usertitle',$arr['usertitle']);
+	setcookie('usercontent',$arr['usercontent']);
+	setcookie('usertime',$arr['usertime']);
+	$userhits++;
+	$sql1 = "UPDATE message SET userhits = '$userhits' WHERE userid='$id';";
+	mysql_query($sql1);
+	header('location:home.php');
