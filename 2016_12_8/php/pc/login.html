@@ -17,6 +17,9 @@
 				<span class="user_e">Password:</span><input class="text" type="password" name="pwd"><br>
 				<input class="checkbox_7" type="checkbox" name="remember" value="yes">7天自动登录
 			</div>
+			<img  title="点击刷新" src="../captcha.php" align="absbottom" onClick="this.src='../captcha.php?'+Math.random();"></img>
+			<input class="authnum" type="text" name="authnum" value="" placeholder="">
+
 				<input id="sub" type="submit" name="login" value="Log in">	
 			</form>		
 		</div>

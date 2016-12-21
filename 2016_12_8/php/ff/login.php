@@ -1,6 +1,7 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
 	session_start();
+	session_destroy();
 	include('person.class.php');
 	$person = new Person();
 	if (isset($_POST['login'])) {
@@ -8,6 +9,14 @@
 		$password = trim($_POST['pwd']);
 		//查询数据库里的用户
 		$boo=$person->login();
+		//获取验证码
+		echo $authnum=$_POST['authnum'];
+		echo $_SESSION["authnum_session"];
+		if($authnum!=$_SESSION["authnum_session"]){
+			header("refresh:3;url=../pc/login.html");
+			echo "验证码错误，3秒后跳转到登陆页面";
+			exit;
+		}
 		// echo "<br>带人--".$boo."<br>";
 		if ($username=='' || $password=='') {
 			header("refresh:3;url=../pc/login.html");

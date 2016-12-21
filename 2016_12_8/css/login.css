@@ -84,3 +84,8 @@ a{
 	color: #009ee4;
 	text-decoration: none;
 }
+.authnum{
+	width: 150px;
+	font-size: 1.25em;
+	margin: 10px;
+}
